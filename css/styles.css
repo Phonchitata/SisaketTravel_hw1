@@ -9,3 +9,20 @@ body {
     display: flex;
     flex-direction: column;
 }
+
+/* จัดการ main */
+main {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    /* จัดให้อยู่ตรงกลาง */
+    padding: 20px;
+    background-color: #f9f9f9da;
+    /* สีพื้นหลังของ main */
+    border: 1px solid #ccc;
+    /* เส้นกรอบรอบ main */
+    border-radius: 8px;
+    /* มุมโค้ง */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* เงารอบกรอบ */
+}
