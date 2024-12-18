@@ -89,3 +89,25 @@ ul {
     font-size: 1rem;
     font-weight: bold;
 }
+/* Navigation Menu */
+.nav-list {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-list li {
+    display: inline;
+    margin-right: 2rem;
+}
+
+.nav-list a {
+    color: #e0ecff;
+    text-decoration: none;
+}
+
+.nav-list a:hover {
+    color: rgb(246, 237, 117);
+}
