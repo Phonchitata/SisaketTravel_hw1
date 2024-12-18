@@ -161,6 +161,7 @@ ul {
         color: #f1c40f;
     }
 }
+
 /* Box Model */
 .content-box {
     width: 80%;
@@ -170,6 +171,7 @@ ul {
     border-radius: 8px;
     background-color: white;
 }
+
 /* Flexbox Containers */
 .highlight-container {
     display: flex;
@@ -178,6 +180,7 @@ ul {
     gap: 20px;
     padding: 20px;
 }
+
 .highlight-box {
     display: flex;
     flex-direction: column;
@@ -188,64 +191,82 @@ ul {
     border-radius: 4px;
     gap: 15px;
 }
+
 #images {
     border-radius: 10px;
     width: 100%;
     max-width: 700px;
     margin-top: 15px;
-    margin-left: auto;  
-    margin-right: auto; 
-    display: block;     
-    
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+
 }
+
 #images_logo {
     width: 100px;
-    
+
 }
 
 .images_about {
     max-width: 100%;
     height: auto;
-    display: block; /* ทำให้ภาพเป็น block เพื่อให้สามารถจัดตำแหน่งได้ */
-    margin: 0 auto; /* จัดตำแหน่งภาพให้อยู่กึ่งกลาง */
+    display: block;
+    /* ทำให้ภาพเป็น block เพื่อให้สามารถจัดตำแหน่งได้ */
+    margin: 0 auto;
+    /* จัดตำแหน่งภาพให้อยู่กึ่งกลาง */
     border-radius: 10px;
     box-shadow: 0 20px 15px rgba(4, 3, 3, 0.2);
 }
 
 /* เพิ่ม CSS นี้เพื่อให้รูปเรียงต่อกันในแถวเดียว */
 .highlight-container {
-    display: flex; /* ใช้ Flexbox */
-    flex-wrap: wrap; /* รูปจะย้ายไปบรรทัดถัดไปเมื่อพื้นที่ไม่พอ */
-    justify-content: center; /* จัดให้อยู่กึ่งกลาง */
-    gap: 15px; /* ระยะห่างระหว่างรูป */
+    display: flex;
+    /* ใช้ Flexbox */
+    flex-wrap: wrap;
+    /* รูปจะย้ายไปบรรทัดถัดไปเมื่อพื้นที่ไม่พอ */
+    justify-content: center;
+    /* จัดให้อยู่กึ่งกลาง */
+    gap: 15px;
+    /* ระยะห่างระหว่างรูป */
     padding: 20px;
 }
 
 .highlight-box {
-    flex: 1 1 200px; /* ให้แต่ละบล็อกมีขนาดที่ยืดหยุ่น */
-    max-width: 200px; /* กำหนดขนาดสูงสุด */
-    min-width: 150px; /* กำหนดขนาดขั้นต่ำ */
+    flex: 1 1 200px;
+    /* ให้แต่ละบล็อกมีขนาดที่ยืดหยุ่น */
+    max-width: 200px;
+    /* กำหนดขนาดสูงสุด */
+    min-width: 150px;
+    /* กำหนดขนาดขั้นต่ำ */
     display: flex;
-    justify-content: center; /* จัดรูปให้อยู่กลางกล่อง */
-    align-items: center; /* จัดแนวตั้งให้อยู่กลาง */
+    justify-content: center;
+    /* จัดรูปให้อยู่กลางกล่อง */
+    align-items: center;
+    /* จัดแนวตั้งให้อยู่กลาง */
 }
 
 .resizable-image {
-    width: 100%; /* ให้รูปเต็มขนาดที่กำหนด */
-    height: 1000; /* กำหนดความสูงคงที่ */
-    object-fit: cover; /* ทำให้ภาพไม่บิดเบือน */
+    width: 100%;
+    /* ให้รูปเต็มขนาดที่กำหนด */
+    height: 1000;
+    /* กำหนดความสูงคงที่ */
+    object-fit: cover;
+    /* ทำให้ภาพไม่บิดเบือน */
     border-radius: 10px;
     box-shadow: 0 20px 15px rgba(4, 3, 3, 0.2);
 }
+
 .resizable-image:hover {
-    transform: scale(1.05); 
-  }
-  
+    transform: scale(1.05);
+}
+
 figcaption {
     margin-top: 10px;
     font-size: 14px;
     color: #555;
 }
+
 /* First Letter Styling */
 .first-letter::before {
     content: "ศรีสะเกษ ";
@@ -256,4 +277,13 @@ figcaption {
 .first-letter::first-letter {
     font-size: 200%;
     color: #e2562b;
+}
+
+/* Footer */
+footer {
+    margin-top: auto;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
 }
