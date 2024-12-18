@@ -246,3 +246,14 @@ figcaption {
     font-size: 14px;
     color: #555;
 }
+/* First Letter Styling */
+.first-letter::before {
+    content: "ศรีสะเกษ ";
+    color: #666;
+    font-size: 100%;
+}
+
+.first-letter::first-letter {
+    font-size: 200%;
+    color: #e2562b;
+}
