@@ -9,6 +9,12 @@ body {
     display: flex;
     flex-direction: column;
 }
+/* Header */
+.header {
+    background: linear-gradient(to right, #a34803e5, #484540);
+    color: rgb(240, 200, 191);
+    padding: 0rem;
+}
 
 /* จัดการ main */
 main {
