@@ -9,6 +9,7 @@ body {
     display: flex;
     flex-direction: column;
 }
+
 /* Header */
 .header {
     background: linear-gradient(to right, #a34803e5, #484540);
@@ -61,6 +62,7 @@ main {
 .block-4 {
     background-color: #48474655;
 }
+
 /* Typography */
 h1 {
     text-align: center;
@@ -89,6 +91,7 @@ ul {
     font-size: 1rem;
     font-weight: bold;
 }
+
 /* Navigation Menu */
 .nav-list {
     display: flex;
@@ -110,4 +113,51 @@ ul {
 
 .nav-list a:hover {
     color: rgb(246, 237, 117);
+}
+
+/* Hamburger Menu */
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 2px;
+    right: 20px;
+}
+
+.hamburger-menu span {
+    width: 30px;
+    height: 4px;
+    background-color: #f7f1ef;
+    margin: 5px 0;
+    transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+    .hamburger-menu {
+        display: flex;
+    }
+
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        background: linear-gradient(to right, #a34803e5, #484540);
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 200px;
+        border-radius: 8px;
+    }
+
+    .nav-list.active {
+        display: flex;
+    }
+
+    .nav-list li {
+        padding: 10px;
+        text-align: right;
+    }
+
+    .nav-list a:hover {
+        color: #f1c40f;
+    }
 }
